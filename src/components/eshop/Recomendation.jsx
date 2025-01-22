@@ -427,7 +427,7 @@ const Recomendation = () => {
               </div>
             ))}
           </div>
-          <div className={`w-[620%] bg-white h-full absolute sm:w-[350%] flex flex-shrink-0 justify-around items-center px-2 animate-marquee2 ${activeButton === "necklaces" ? "z-30" : "z-0"}`}>
+          <div className={`w-[520%] bg-white h-full absolute sm:w-[350%] flex flex-shrink-0 justify-around items-center px-2 animate-marquee2 ${activeButton === "necklaces" ? "z-30" : "z-0"}`}>
             {necklaceData.map((item, index) => (
               <div
                 key={index}
@@ -463,7 +463,7 @@ const Recomendation = () => {
               </div>
             ))}
           </div>
-          <div className={`w-[520%] bg-white h-full absolute sm:w-[450%] flex flex-shrink-0 justify-around items-center px-2 animate-marquee2 ${activeButton === "earrings" ? "z-30" : "z-0"}`}>
+          <div className={`w-[620%] bg-white h-full absolute sm:w-[450%] flex flex-shrink-0 justify-around items-center px-2 animate-marquee2 ${activeButton === "earrings" ? "z-30" : "z-0"}`}>
             {earringsData.map((item, index) => (
               <div
                 key={index}
