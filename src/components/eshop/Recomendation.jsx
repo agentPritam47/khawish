@@ -251,7 +251,7 @@ const Recomendation = () => {
       </div>
 
       <div>
-        <h2 className="text-center mt-10 md:mt-20 text-2xl md:text-4xl uppercase text-amber-950 tracking-widest">
+        <h2 className="text-center pb-3 mt-10 md:mt-20 text-2xl md:text-4xl uppercase text-amber-950 tracking-widest">
           Browse by Styles
         </h2>
 
@@ -427,7 +427,7 @@ const Recomendation = () => {
               </div>
             ))}
           </div>
-          <div className={`w-[520%] bg-white h-full absolute sm:w-[350%] flex flex-shrink-0 justify-around items-center px-2 animate-marquee2 ${activeButton === "necklaces" ? "z-30" : "z-0"}`}>
+          <div className={`w-[620%] bg-white h-full absolute sm:w-[350%] flex flex-shrink-0 justify-around items-center px-2 animate-marquee2 ${activeButton === "necklaces" ? "z-30" : "z-0"}`}>
             {necklaceData.map((item, index) => (
               <div
                 key={index}
