@@ -190,7 +190,7 @@ const Recomendation = () => {
 
 
   return (
-    <section className="min-h-[150vh] w-full bg-[#F7ECEB] font-light p-4 md:p-6" aria-label="Jewelry Recommendations">
+    <section className="md:min-h-[150vh] py-10 w-full bg-[#F7ECEB] font-light p-4 md:p-6" aria-label="Jewelry Recommendations">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-center mt-10 md:mt-20">
           Life is a Party, Bling in Style !
@@ -254,64 +254,96 @@ const Recomendation = () => {
         <h2 className="text-center mt-10 md:mt-20 text-2xl md:text-4xl uppercase text-amber-950 tracking-widest">
           Browse by Styles
         </h2>
-        <div className="md:w-1/2 w-[95%]  md:h-20 flex items-center justify-between relative left-1/2 -translate-x-1/2 mt-2" role="tablist" aria-label="Jewelry categories">
+
+        <div className="md:hidden flex w-[95%] mx-auto h-20 gap-1">
+          <div 
+            onClick={() => setActiveButton("rings")}
+            className={`w-[25%] h-full flex flex-col justify-center items-center rounded-lg ${
+              activeButton === "rings" ? "bg-[#fffcfb] border border-amber-950" : ""
+            }`}
+          >
+            <div className="w-10 h-10 bg-red-500"></div>
+            <p className="text-amber-950 font-light text-xs">RINGS</p>
+          </div>
+          <div 
+            onClick={() => setActiveButton("bracelets")}
+            className={`w-[25%] h-full flex flex-col justify-center items-center rounded-lg ${
+              activeButton === "bracelets" ? "bg-[#fffcfb] border border-amber-950" : ""
+            }`}
+          >
+            <div className="w-10 h-10 bg-red-500"></div>
+            <p className="text-amber-950 font-light text-xs">Bracelets</p>
+          </div>
+          <div 
+            onClick={() => setActiveButton("necklaces")}
+            className={`w-[25%] h-full flex flex-col justify-center items-center rounded-lg ${
+              activeButton === "necklaces" ? "bg-[#fffcfb] border border-amber-950" : ""
+            }`}
+          >
+            <div className="w-10 h-10 bg-red-500"></div>
+            <p className="text-amber-950 font-light text-xs">Necklaces</p>
+          </div>
+          <div 
+            onClick={() => setActiveButton("earrings")}
+            className={`w-[25%] h-full flex flex-col justify-center items-center rounded-lg ${
+              activeButton === "earrings" ? "bg-[#fffcfb] border border-amber-950" : ""
+            }`}
+          >
+            <div className="w-10 h-10 bg-red-500"></div>
+            <p className="text-amber-950 font-light text-xs">Earrings</p>
+          </div>
+        </div>
+
+        <div className="md:w-1/2 w-[95%] md:h-20 md:flex hidden items-center justify-between relative left-1/2 -translate-x-1/2 mt-2" role="tablist" aria-label="Jewelry categories">
           <button
             onClick={() => setActiveButton("rings")}
-            className={`w-[10rem] button1 h-fit flex items-center justify-center bg-amber-900 rounded-full border border-dotted border-amber-900 ${
-              activeButton === "rings" ? "after:scale-x-100" : ""
+            className={`w-[10rem] h-fit flex items-center justify-center rounded-full ${
+              activeButton === "rings" ? "bg-[#fffcfb] border border-amber-950" : "bg-amber-900"
             }`}
             role="tab"
             aria-selected={activeButton === "rings"}
             aria-controls="rings-panel"
           >
-            <p
-              className={`${activeButton === "rings" ? "text-black" : "text-white"} uppercase tracking-[.2rem] p-1`}
-            >
+            <p className={`${activeButton === "rings" ? "text-amber-950" : "text-white"} uppercase tracking-[.2rem] p-1`}>
               RINGS
             </p>
           </button>
           <button
             onClick={() => setActiveButton("bracelets")}
-            className={`w-[10rem] button1 h-fit flex items-center justify-center bg-amber-900 rounded-full border border-dotted border-amber-900 ${
-              activeButton === "bracelets" ? "after:scale-x-100" : ""
+            className={`w-[10rem] h-fit flex items-center justify-center rounded-full ${
+              activeButton === "bracelets" ? "bg-[#fffcfb] border border-amber-950" : "bg-amber-900"
             }`}
             role="tab"
             aria-selected={activeButton === "bracelets"}
             aria-controls="bracelets-panel"
           >
-            <p
-              className={`${activeButton === "bracelets" ? "text-black" : "text-white"} uppercase tracking-[.2rem] p-1`}
-            >
+            <p className={`${activeButton === "bracelets" ? "text-amber-950" : "text-white"} uppercase tracking-[.2rem] p-1`}>
               Bracelets
             </p>
           </button>
           <button
             onClick={() => setActiveButton("necklaces")}
-            className={`w-[10rem] button1 h-fit flex items-center justify-center bg-amber-900 rounded-full border border-dotted border-amber-900 ${
-              activeButton === "necklaces" ? "after:scale-x-100" : ""
+            className={`w-[10rem] h-fit flex items-center justify-center rounded-full ${
+              activeButton === "necklaces" ? "bg-[#fffcfb] border border-amber-950" : "bg-amber-900"
             }`}
             role="tab"
             aria-selected={activeButton === "necklaces"}
             aria-controls="necklaces-panel"
           >
-            <p
-              className={`${activeButton === "necklaces" ? "text-black" : "text-white"} uppercase tracking-[.2rem] p-1`}
-            >
+            <p className={`${activeButton === "necklaces" ? "text-amber-950" : "text-white"} uppercase tracking-[.2rem] p-1`}>
               Necklaces
             </p>
           </button>
           <button
             onClick={() => setActiveButton("earrings")}
-            className={`w-[10rem] button1 h-fit flex items-center justify-center bg-amber-900 rounded-full border border-dotted border-amber-900 ${
-              activeButton === "earrings" ? "after:scale-x-100" : ""
+            className={`w-[10rem] h-fit flex items-center justify-center rounded-full ${
+              activeButton === "earrings" ? "bg-[#fffcfb] border border-amber-950" : "bg-amber-900"
             }`}
             role="tab"
             aria-selected={activeButton === "earrings"}
             aria-controls="earrings-panel"
           >
-            <p
-              className={`${activeButton === "earrings" ? "text-black" : "text-white"} uppercase tracking-[.2rem] p-1`}
-            >
+            <p className={`${activeButton === "earrings" ? "text-amber-950" : "text-white"} uppercase tracking-[.2rem] p-1`}>
               Earrings
             </p>
           </button>
