@@ -297,7 +297,7 @@ const Recomendation = () => {
         <div className="md:w-1/2 w-[95%] md:h-20 md:flex hidden items-center justify-between relative left-1/2 -translate-x-1/2 mt-2" role="tablist" aria-label="Jewelry categories">
           <button
             onClick={() => setActiveButton("rings")}
-            className={`w-[10rem] h-fit flex items-center justify-center rounded-full ${
+            className={`w-[10rem] h-fit flex items-center justify-center button1 rounded-full ${
               activeButton === "rings" ? "bg-[#fffcfb] border border-amber-950" : "bg-amber-900"
             }`}
             role="tab"
@@ -310,7 +310,7 @@ const Recomendation = () => {
           </button>
           <button
             onClick={() => setActiveButton("bracelets")}
-            className={`w-[10rem] h-fit flex items-center justify-center rounded-full ${
+            className={`w-[10rem] h-fit flex items-center button1 justify-center rounded-full ${
               activeButton === "bracelets" ? "bg-[#fffcfb] border border-amber-950" : "bg-amber-900"
             }`}
             role="tab"
@@ -323,7 +323,7 @@ const Recomendation = () => {
           </button>
           <button
             onClick={() => setActiveButton("necklaces")}
-            className={`w-[10rem] h-fit flex items-center justify-center rounded-full ${
+            className={`w-[10rem] h-fit flex items-center button1 justify-center rounded-full ${
               activeButton === "necklaces" ? "bg-[#fffcfb] border border-amber-950" : "bg-amber-900"
             }`}
             role="tab"
@@ -336,7 +336,7 @@ const Recomendation = () => {
           </button>
           <button
             onClick={() => setActiveButton("earrings")}
-            className={`w-[10rem] h-fit flex items-center justify-center rounded-full ${
+            className={`w-[10rem] h-fit flex items-center button1 justify-center rounded-full ${
               activeButton === "earrings" ? "bg-[#fffcfb] border border-amber-950" : "bg-amber-900"
             }`}
             role="tab"
