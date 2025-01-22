@@ -224,7 +224,7 @@ const Recomendation = () => {
                   role="img"
                   aria-label={item.alt}
                 ></div>
-                <p className="uppercase text-center text-base md:text-xl tracking-widest">
+                <p className="uppercase text-center text-sm md:text-xl tracking-widest">
                   {item.title}
                 </p>
               </div>
@@ -241,7 +241,7 @@ const Recomendation = () => {
                   role="img"
                   aria-label={item.alt}
                 ></div>
-                <p className="uppercase text-center text-base md:text-xl tracking-widest">
+                <p className="uppercase text-center text-sm md:text-xl tracking-widest">
                   {item.title}
                 </p>
               </div>
