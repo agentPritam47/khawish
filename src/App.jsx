@@ -7,6 +7,7 @@ import Swiper from "./components/eshop/Swiper";
 import Trending from "./components/eshop/Trending";
 import Benifit from "./components/eshop/Benifit";
 import Testimonial from "./components/eshop/Testimonial";
+import Footer from "./components/eshop/Footer";
 const App = () => {
   return (
     <div>
@@ -17,7 +18,8 @@ const App = () => {
       <Trending />
       <Benifit />
       <Testimonial />
-      <Test />
+      {/* <Test /> */}
+      <Footer />
     </div>
   );
 };

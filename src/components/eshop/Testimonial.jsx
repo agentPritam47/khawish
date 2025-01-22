@@ -56,7 +56,7 @@ const Testimonial = () => {
   }, []);
 
   return (
-    <div className="w-full h-[100vh] py-12 bg-[#F7ECEB]">
+    <div className="w-full md:h-[100vh] py-12 bg-[#F7ECEB]">
       <h2 className="text-center text-2xl md:text-4xl font-light uppercase text-amber-950 tracking-widest mb-8">
         Customer Reviews
       </h2>
