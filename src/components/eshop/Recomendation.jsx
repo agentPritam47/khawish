@@ -368,7 +368,7 @@ const Recomendation = () => {
                   role="img"
                   aria-label={item.alt}
                 ></div>
-                <p className="uppercase text-center text-base tracking-widest">
+                <p className="uppercase text-center text-sm md:text-base tracking-widest">
                   {item.name}
                 </p>
               </div>
@@ -385,7 +385,7 @@ const Recomendation = () => {
                   role="img"
                   aria-label={item.alt}
                 ></div>
-                <p className="uppercase text-center text-base tracking-widest">
+                <p className="uppercase text-center text-sm md:text-base tracking-widest">
                   {item.name}
                 </p>
               </div>
@@ -404,7 +404,7 @@ const Recomendation = () => {
                   role="img"
                   aria-label={item.alt}
                 ></div>
-                <p className="uppercase text-center text-base tracking-widest">
+                <p className="uppercase text-center text-sm md:text-base tracking-widest">
                   {item.name}
                 </p>
               </div>
@@ -421,7 +421,7 @@ const Recomendation = () => {
                   role="img"
                   aria-label={item.alt}
                 ></div>
-                <p className="uppercase text-center text-base tracking-widest">
+                <p className="uppercase text-center text-sm md:text-base tracking-widest">
                   {item.name}
                 </p>
               </div>
@@ -440,7 +440,7 @@ const Recomendation = () => {
                   role="img"
                   aria-label={item.alt}
                 ></div>
-                <p className="uppercase text-center text-base tracking-widest">
+                <p className="uppercase text-center text-sm md:text-base tracking-widest">
                   {item.name}
                 </p>
               </div>
@@ -457,7 +457,7 @@ const Recomendation = () => {
                   role="img"
                   aria-label={item.alt}
                 ></div>
-                <p className="uppercase text-center text-base tracking-widest">
+                <p className="uppercase text-center text-sm md:text-base tracking-widest">
                   {item.name}
                 </p>
               </div>
@@ -476,7 +476,7 @@ const Recomendation = () => {
                   role="img"
                   aria-label={item.alt}
                 ></div>
-                <p className="uppercase text-center text-base tracking-widest">
+                <p className="uppercase text-center text-sm md:text-base tracking-widest">
                   {item.name}
                 </p>
               </div>
@@ -493,7 +493,7 @@ const Recomendation = () => {
                   role="img"
                   aria-label={item.alt}
                 ></div>
-                <p className="uppercase text-center text-base tracking-widest">
+                <p className="uppercase text-center text-sm md:text-base tracking-widest">
                   {item.name}
                 </p>
               </div>
