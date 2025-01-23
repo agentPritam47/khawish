@@ -8,9 +8,11 @@ import Trending from "./components/eshop/Trending";
 import Benifit from "./components/eshop/Benifit";
 import Testimonial from "./components/eshop/Testimonial";
 import Footer from "./components/eshop/Footer";
+import Nav from "./components/eshop/Nav";
 const App = () => {
   return (
     <div>
+      <Nav />
       <Header />
       <Recomendation />
       <Collection />
