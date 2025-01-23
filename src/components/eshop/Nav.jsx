@@ -18,7 +18,7 @@ const Nav = () => {
   }, []);
 
   return (
-    <div className={`fixed top-0 left-0 z-[100] w-full shadow-md transition-transform duration-300 ${show ? 'visible' : 'hidden'}`}>
+    <div className={`fixed top-0 left-0 z-[100] w-full shadow-md transition-transform duration-300 ${show ? 'opacity-[1] pointer-events-auto' : 'opacity-[0] pointer-events-none'}`}>
       <div className="block md:hidden py-2 w-full bg-[#f7ebeb]">
         <h3 className="text-[#4F2426] uppercase text-xs md:text-base text-center">Visit Brand Website</h3>
       </div>
@@ -43,10 +43,10 @@ const Nav = () => {
         </div>
 
         <div className="flex justify-center items-center gap-1 md:gap-2">
-          <div className="h-fit w-20 md:w-28 pr-2">
+          <div className="h-fit w-16 md:w-28 pr-2">
             <img src="/eshop/Gulz-brown.svg" alt="" />
           </div>
-          <p className="text-[#4F2426] text-lg md:text-2xl pl-2 md:pl-3 border-l border-[#4F2426]">
+          <p className="text-[#4F2426] text-sm md:text-2xl pl-2 md:pl-3 border-l border-[#4F2426]">
             QUEEN OF HEARTS
           </p>
         </div>

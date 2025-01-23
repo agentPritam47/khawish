@@ -12,7 +12,7 @@ const Trending = () => {
         <meta property="og:description" content="Discover our trending collection of diamond rings - from classic styles to contemporary designs. Find the perfect ring to match your signature style." />
       </Helmet>
 
-      <div className='bg-[#F7ECEB] min-h-screen w-full py-10'>
+      <div className='bg-[#F7ECEB] md:min-h-screen w-full py-10'>
         <div className='mx-auto w-[90%] md:w-[80%] flex flex-col md:flex-row justify-center items-center gap-8'>
           <div className='h-[50vh] md:h-[100%] w-full md:w-1/2'>
             <img 
