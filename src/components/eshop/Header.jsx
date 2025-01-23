@@ -40,7 +40,7 @@ const Header = () => {
             <div className="h-fit w-20 md:w-28 pr-2">
               <img src="/eshop/Gulz-Logo.svg" alt="" />
             </div>
-            <p className="text-white text-lg md:text-2xl pl-2 md:pl-3 border-l border-white">
+            <p className="text-white text-sm md:text-2xl pl-2 md:pl-3 border-l border-white">
               QUEEN OF HEARTS
             </p>
           </div>
